@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MASTER2 author="wl" buildNum="699" created="2022-03-19T03:32:42.7976134Z" description="" domain="Auto" editor="OFC-CQUPT" encryptver="" keywords="" product="VPI_TMM_OPTICALSYSTEMS.pro,VPI_CM_ACTIVEPHOTONICS.pro" prodVer="10.0" ptName="MZM_vtmg" resVersion="" singleEntity="Auto" singleEntThreads="1" ver="3">
+  <ICONDEF __key="icon" bounds="-3.0, -2.0, 3.0, 2.0">
+    <body __key="body">
+      <rect_body __key="gprim" fillcolor="#FFFFFFFF" linecolor="black" lineweight="1" position="-2.0, -2.0" size="4.0, 4.0" />
+    </body>
+    <decoration __key="decoration">
+      <polygon __key="gprim" closed="True" fillcolor="blue" lineweight="1" points="-1.0, 0.0, -2.0, 1.0, -1.4, 0.2, -2.0, 0.16, -2.0, -0.16, -1.4, -0.2, -2.0, -1.0" />
+      <polygon __key="gprim" closed="True" fillcolor="blue" lineweight="1" points="2.0, 0.0, 1.0, 1.0, 1.6, 0.2, 1.0, 0.16, 1.0, -0.16, 1.6, -0.2, 1.0, -1.0" />
+      <rect __key="gprim" linecolor="black" lineweight="1" position="-0.5, 1.2" size="1.0, 0.6" />
+      <line __key="gprim" linecolor="black" lineweight="1" points="-1.1, 1.5, -0.5, 1.5" />
+      <line __key="gprim" linecolor="black" lineweight="1" points="0.5, 1.5, 1.1, 1.5" />
+      <line __key="gprim" linecolor="black" lineweight="1" points="-1.2, -0.6, 1.2, -0.6" />
+      <oval __key="gprim" linecolor="black" lineweight="1" position="-1.0, -1.8" size="1.2, 1.2" />
+      <oval __key="gprim" linecolor="black" lineweight="1" position="-0.2, -1.8" size="1.2, 1.2" />
+      <polygon __key="gprim" closed="True" linecolor="black" lineweight="1" points="0.5, 0.3, -0.5, 0.9, -0.5, -0.3" />
+      <line __key="gprim" linecolor="black" lineweight="1" points="-1.0, 0.3, -0.5, 0.3" />
+      <line __key="gprim" linecolor="black" lineweight="1" points="0.5, 0.3, 1.0, 0.3" />
+    </decoration>
+    <physical __key="physical">
+      <line __key="gprim" linecolor="anytype" lineweight="1" points="-3.0, -1.0, -2.0, -1.0" />
+      <line __key="gprim" linecolor="optical" lineweight="1" points="-3.0, 1.0, -2.0, 1.0" />
+      <line __key="gprim" linecolor="optical" lineweight="1" points="3.0, 0.0, 2.0, 0.0" />
+    </physical>
+  </ICONDEF>
+  <INTERFACE __key="interface">
+    <PORTDEF __key="ports" dir="in" label="in" objectId="input2" type="anytype">
+      <TERM __key="terms" look="icon" name="in" objectId="0">
+        <GEOMETRY __key="geom" rot="180" x="-3.0" y="-1.0" />
+      </TERM>
+    </PORTDEF>
+    <PORTDEF __key="ports" dir="in" label="in" objectId="input1" type="optical">
+      <TERM __key="terms" look="icon" name="in" objectId="0">
+        <GEOMETRY __key="geom" rot="180" x="-3.0" y="1.0" />
+      </TERM>
+    </PORTDEF>
+    <PORTDEF __key="ports" dir="out" label="out" objectId="output1" type="optical">
+      <TERM __key="terms" look="icon" name="out" objectId="0">
+        <GEOMETRY __key="geom" x="3.0" y="0.0" />
+      </TERM>
+    </PORTDEF>
+    <STATEDEF __key="states" category="Parameter" label="VpiDC" objectId="VpiDC" type="float">
+      <SETTING __key="default" exprType="standard" state="VpiDC" value="VpiDC" />
+      <UNITDEF __key="unit" type="anytype" unit="" />
+    </STATEDEF>
+    <STATEDEF __key="states" category="Parameter" label="VpiRF" objectId="VpiRF" type="float">
+      <SETTING __key="default" exprType="standard" state="VpiRF" value="VpiRF" />
+      <UNITDEF __key="unit" type="anytype" unit="" />
+    </STATEDEF>
+    <STATEDEF __key="states" category="Parameter" label="ExtinctionRatio" objectId="ExtinctionRatio" type="float">
+      <SETTING __key="default" exprType="standard" state="ExtinctionRatio" value="ExtinctionRatio" />
+      <UNITDEF __key="unit" type="anytype" unit="" />
+    </STATEDEF>
+    <STATEDEF __key="states" category="Parameter" label="Amplitude_Bias" objectId="Amplitude_Bias" type="float">
+      <SETTING __key="default" exprType="standard" state="Amplitude_Bias" value="Amplitude_Bias" />
+      <UNITDEF __key="unit" type="anytype" unit="" />
+    </STATEDEF>
+  </INTERFACE>
+  <ENCRYPTION __key="encryption" password="">
+    <CONTENTS __key="contents">
+      <TOPOLOGY __key="topology">
+        <GRAPHDEF __key="graphics" />
+        <INSTANCE __key="instances" instanceId="ModulatorDiffMZ_DSM_vtms1" master="URN:VPI_LIB::TC Modules\Optical Modulators\ModulatorDiffMZ_DSM.vtms:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" x="31.0" y="27.0" />
+          <SETTING __key="settings" exprType="standard" state="VpiDC" unit="V" value="VpiDC" />
+          <SETTING __key="settings" exprType="standard" state="VpiRF" unit="V" value="VpiRF" />
+          <SETTING __key="settings" engValue="0" exprType="standard" state="InsertionLoss" unit="dB" value="0" />
+          <SETTING __key="settings" engValue="ExtinctionRatio" exprType="standard" state="ExtinctionRatio" unit="dB" value="ExtinctionRatio" />
+          <SETTING __key="settings" exprType="standard" state="LowerArmPhaseSense" value="NEGATIVE" />
+          <SETTING __key="settings" exprType="standard" state="dVpiDC_dTemperature" unit="V/degC" value="0" />
+          <SETTING __key="settings" exprType="standard" state="dVpiRF_dTemperature" unit="V/degC" value="0" />
+          <SETTING __key="settings" exprType="standard" state="OperatingTemperature" unit="degC" value="25" />
+          <SETTING __key="settings" exprType="standard" state="ReferenceTemperature" unit="degC" value="25" />
+          <SETTING __key="settings" exprType="standard" state="S21_BandwidthResponse" value="Ideal" />
+          <SETTING __key="settings" engValue="40.0e-3" exprType="standard" state="ElectrodeLengthUpper" unit="m" value="40.0e-3" />
+          <SETTING __key="settings" exprType="standard" state="IndexMismatchUpper" value="0.05" />
+          <SETTING __key="settings" exprType="standard" state="MicrowaveLossUpper" unit="dB/m/sqrt(Hz)" value="0.005" />
+          <SETTING __key="settings" engValue="40.0e-3" exprType="standard" state="ElectrodeLengthLower" unit="m" value="40.0e-3" />
+          <SETTING __key="settings" exprType="standard" state="IndexMismatchLower" value="0.05" />
+          <SETTING __key="settings" exprType="standard" state="MicrowaveLossLower" unit="dB/m/sqrt(Hz)" value="0.005" />
+          <SETTING __key="settings" exprType="standard" state="DataFilename" value="" />
+          <SETTING __key="settings" exprType="standard" state="DigitalFilterOrder" value="1024" />
+          <SETTING __key="settings" exprType="standard" state="LogicalChannelReference" value="UpperRfElectrode" />
+          <SETTING __key="settings" exprType="standard" state="ChannelIndex" value="-1" />
+          <SETTING __key="settings" exprType="standard" state="Active" value="On" />
+        </INSTANCE>
+        <INSTANCE __key="instances" instanceId="DC_Source_vtms1" master="URN:VPI_LIB::TC Modules\Electrical Sources\DC_Source.vtms:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" rot="90" x="44.0" y="19.0" />
+          <SETTING __key="settings" exprType="standard" state="Amplitude" unit="V or A" value="Amplitude_Bias" />
+          <SETTING __key="settings" exprType="standard" state="SampleRate" unit="Hz" value="SampleRateDefault" />
+          <SETTING __key="settings" exprType="standard" state="AddLogicalInfo" value="Off" />
+          <SETTING __key="settings" exprType="standard" state="OutputDataType" value="Blocks" />
+          <SETTING __key="settings" exprType="standard" state="BoundaryConditions" value="Periodic" />
+        </INSTANCE>
+        <INSTANCE __key="instances" instanceId="input_vtmy1" master="URN:VPI_LIB::TC Modules\Wiring Tools\input.vtmy:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" x="20.0" y="27.0" />
+          <SETTING __key="settings" exprType="standard" state="port" value="input1" />
+          <SETTING __key="settings" exprType="standard" state="label" value="in" />
+          <SETTING __key="settings" exprType="standard" state="Iterations" value="-1" />
+          <SETTING __key="settings" exprType="standard" state="description" value="" />
+          <SETTING __key="settings" exprType="standard" state="subType" value="" />
+        </INSTANCE>
+        <INSTANCE __key="instances" instanceId="Fork_2_vtms3" master="URN:VPI_LIB::TC Modules\Wiring Tools\Fork_2.vtms:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" rot="90" x="35.0" y="21.0" />
+        </INSTANCE>
+        <INSTANCE __key="instances" instanceId="input_vtmy2" master="URN:VPI_LIB::TC Modules\Wiring Tools\input.vtmy:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" x="20.0" y="19.0" />
+          <SETTING __key="settings" exprType="standard" state="port" value="input2" />
+          <SETTING __key="settings" exprType="standard" state="label" value="in" />
+          <SETTING __key="settings" exprType="standard" state="Iterations" value="-1" />
+          <SETTING __key="settings" exprType="standard" state="description" value="" />
+          <SETTING __key="settings" exprType="standard" state="subType" value="" />
+        </INSTANCE>
+        <INSTANCE __key="instances" instanceId="output_vtmy1" master="URN:VPI_LIB::TC Modules\Wiring Tools\output.vtmy:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" x="41.0" y="27.0" />
+          <SETTING __key="settings" exprType="standard" state="port" value="output1" />
+          <SETTING __key="settings" exprType="standard" state="label" value="out" />
+          <SETTING __key="settings" exprType="standard" state="Iterations" value="-1" />
+          <SETTING __key="settings" exprType="standard" state="description" value="" />
+          <SETTING __key="settings" exprType="standard" state="subType" value="" />
+        </INSTANCE>
+        <INSTANCE __key="instances" instanceId="Fork_2_vtms4" master="URN:VPI_LIB::TC Modules\Wiring Tools\Fork_2.vtms:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" rot="90" x="26.0" y="21.0" />
+        </INSTANCE>
+        <LINK __key="links" inst1="Fork_2_vtms3" inst2="DC_Source_vtms1" points="35.0, 19.0, 41.0, 19.0" port1="input" port2="Output" term1="0" term2="0" width="1" />
+        <LINK __key="links" inst1="input_vtmy2" inst2="Fork_2_vtms4" points="20.0, 19.0, 26.0, 19.0" port1="input" port2="input" term1="0" term2="0" width="1" />
+        <LINK __key="links" inst1="ModulatorDiffMZ_DSM_vtms1" inst2="Fork_2_vtms4" points="30.0, 24.0, 30.0, 23.0, 27.0, 23.0" port1="rfElectricalInputUpper" port2="output" term1="0" term2="1" width="1" />
+        <LINK __key="links" inst1="ModulatorDiffMZ_DSM_vtms1" inst2="Fork_2_vtms3" points="32.0, 24.0, 32.0, 23.0, 34.0, 23.0" port1="biasElectricalInputUpper" port2="output" term1="0" term2="2" width="1" />
+        <LINK __key="links" inst1="input_vtmy1" inst2="ModulatorDiffMZ_DSM_vtms1" points="20.0, 27.0, 28.0, 27.0" port1="input" port2="leftInput" term1="0" term2="0" width="1" />
+        <LINK __key="links" inst1="ModulatorDiffMZ_DSM_vtms1" inst2="output_vtmy1" points="34.0, 27.0, 41.0, 27.0" port1="rightOutput" port2="output" term1="0" term2="0" width="1" />
+        <LINK __key="links" inst1="Fork_2_vtms4" inst2="ModulatorDiffMZ_DSM_vtms1" points="25.0, 23.0, 25.0, 32.0, 30.0, 32.0, 30.0, 30.0" port1="output" port2="rfElectricalInputLower" term1="2" term2="0" width="1" />
+        <LINK __key="links" inst1="ModulatorDiffMZ_DSM_vtms1" inst2="Fork_2_vtms3" points="32.0, 30.0, 32.0, 32.0, 36.0, 32.0, 36.0, 23.0" port1="biasElectricalInputLower" port2="output" term1="0" term2="1" width="1" />
+        <properties __key="properties" />
+      </TOPOLOGY>
+    </CONTENTS>
+  </ENCRYPTION>
+</MASTER2>

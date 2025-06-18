@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MASTER2 author="lenovo" buildNum="699" created="2014-09-15T09:20:31.1104098Z" description="" domain="Auto" editor="lenovo" encryptver="" keywords="" product="VPI_TMM_OPTICALSYSTEMS.pro,VPI_CM_ACTIVEPHOTONICS.pro" prodVer="10.0" ptName="Rx_test_vtmg" resVersion="" singleEntity="Auto" singleEntThreads="1" ver="3">
+  <ICONDEF __key="icon" bounds="-3.0, -2.0, 3.0, 2.0">
+    <body __key="body">
+      <rect_body __key="gprim" fillcolor="#FFFFFFFF" linecolor="black" lineweight="1" position="-2.0, -2.0" size="4.0, 4.0" />
+    </body>
+    <decoration __key="decoration">
+      <polygon __key="gprim" closed="True" fillcolor="blue" lineweight="1" points="-1.0, 0.0, -2.0, 1.0, -1.4, 0.2, -2.0, 0.16, -2.0, -0.16, -1.4, -0.2, -2.0, -1.0" />
+      <polygon __key="gprim" closed="True" fillcolor="blue" lineweight="1" points="2.0, 0.0, 1.0, 1.0, 1.6, 0.2, 1.0, 0.16, 1.0, -0.16, 1.6, -0.2, 1.0, -1.0" />
+      <rect __key="gprim" linecolor="black" lineweight="1" position="-0.5, 1.2" size="1.0, 0.6" />
+      <line __key="gprim" linecolor="black" lineweight="1" points="-1.1, 1.5, -0.5, 1.5" />
+      <line __key="gprim" linecolor="black" lineweight="1" points="0.5, 1.5, 1.1, 1.5" />
+      <line __key="gprim" linecolor="black" lineweight="1" points="-1.2, -0.6, 1.2, -0.6" />
+      <oval __key="gprim" linecolor="black" lineweight="1" position="-1.0, -1.8" size="1.2, 1.2" />
+      <oval __key="gprim" linecolor="black" lineweight="1" position="-0.2, -1.8" size="1.2, 1.2" />
+      <polygon __key="gprim" closed="True" linecolor="black" lineweight="1" points="0.5, 0.3, -0.5, 0.9, -0.5, -0.3" />
+      <line __key="gprim" linecolor="black" lineweight="1" points="-1.0, 0.3, -0.5, 0.3" />
+      <line __key="gprim" linecolor="black" lineweight="1" points="0.5, 0.3, 1.0, 0.3" />
+    </decoration>
+    <physical __key="physical">
+      <line __key="gprim" linecolor="electrical" lineweight="1" points="-3.0, 0.0, -2.0, 0.0" />
+      <line __key="gprim" linecolor="electrical" lineweight="1" points="3.0, 0.0, 2.0, 0.0" />
+    </physical>
+  </ICONDEF>
+  <INTERFACE __key="interface">
+    <PORTDEF __key="ports" dir="in" label="in" objectId="input1" type="electrical">
+      <TERM __key="terms" look="icon" name="in" objectId="0">
+        <GEOMETRY __key="geom" rot="180" x="-3.0" y="0.0" />
+      </TERM>
+    </PORTDEF>
+    <PORTDEF __key="ports" dir="out" label="out" objectId="output1" type="electrical">
+      <TERM __key="terms" look="icon" name="out" objectId="0">
+        <GEOMETRY __key="geom" x="3.0" y="0.0" />
+      </TERM>
+    </PORTDEF>
+  </INTERFACE>
+  <ENCRYPTION __key="encryption" password="">
+    <CONTENTS __key="contents">
+      <TOPOLOGY __key="topology">
+        <GRAPHDEF __key="graphics" />
+        <INSTANCE __key="instances" instanceId="input_vtmy1" master="URN:VPI_LIB::TC Modules\Wiring Tools\input.vtmy:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" x="7.0" y="12.0" />
+          <SETTING __key="settings" exprType="standard" state="port" value="input1" />
+          <SETTING __key="settings" exprType="standard" state="label" value="in" />
+          <SETTING __key="settings" exprType="standard" state="Iterations" value="-1" />
+          <SETTING __key="settings" exprType="standard" state="description" value="" />
+          <SETTING __key="settings" exprType="standard" state="subType" value="" />
+        </INSTANCE>
+        <INSTANCE __key="instances" instanceId="output_vtmy1" master="URN:VPI_LIB::TC Modules\Wiring Tools\output.vtmy:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" x="41.0" y="12.0" />
+          <SETTING __key="settings" exprType="standard" state="port" value="output1" />
+          <SETTING __key="settings" exprType="standard" state="label" value="out" />
+          <SETTING __key="settings" exprType="standard" state="Iterations" value="-1" />
+          <SETTING __key="settings" exprType="standard" state="description" value="" />
+          <SETTING __key="settings" exprType="standard" state="subType" value="" />
+        </INSTANCE>
+        <INSTANCE __key="instances" instanceId="CoSimOutputEl_vtms1" master="URN:VPI_LIB::TC Modules\Cosimulation\CoSimOutputEl.vtms:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" x="31.0" y="12.0" />
+          <SETTING __key="settings" exprType="standard" state="Name" value="output" />
+        </INSTANCE>
+        <INSTANCE __key="instances" instanceId="CoSimInputEl_vtms1" master="URN:VPI_LIB::TC Modules\Cosimulation\CoSimInputEl.vtms:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" x="15.0" y="12.0" />
+          <SETTING __key="settings" exprType="standard" state="Name" value="input" />
+          <SETTING __key="settings" exprType="standard" state="InputDataType" value="Blocks" />
+        </INSTANCE>
+        <INSTANCE __key="instances" instanceId="CoSimInterface_vtms1" master="URN:VPI_LIB::TC Modules\Cosimulation\CoSimInterface.vtms:" resVersion="" showInstanceId="False">
+          <GEOMETRY __key="geom" x="23.0" y="12.0" />
+          <SETTING __key="settings" exprType="standard" state="InterfaceType" value="Matlab" />
+          <SETTING __key="settings" exprType="standard" state="LogicalInformation" value="No" />
+          <SETTING __key="settings" exprType="standard" state="Path" value="" />
+          <SETTING __key="settings" exprType="standard" state="IfcFile" value="" />
+          <SETTING __key="settings" exprType="standard" state="ComponentId" value="" />
+          <SETTING __key="settings" exprType="standard" state="InitCommand" value="" />
+          <SETTING __key="settings" exprType="standard" state="RunCommand" value="ouput = Platform_NOMA_Rx(input)" />
+          <SETTING __key="settings" exprType="standard" state="WrapupCommand" value="" />
+          <SETTING __key="settings" exprType="standard" state="ShareInterface" value="On" />
+        </INSTANCE>
+        <LINK __key="links" inst1="CoSimInputEl_vtms1" inst2="input_vtmy1" points="12.0, 12.0, 7.0, 12.0" port1="input" port2="input" term1="0" term2="0" width="1" />
+        <LINK __key="links" inst1="CoSimInputEl_vtms1" inst2="CoSimInterface_vtms1" points="18.0, 12.0, 20.0, 12.0" port1="output" port2="input" term1="0" term2="0" width="1" />
+        <LINK __key="links" inst1="CoSimInterface_vtms1" inst2="CoSimOutputEl_vtms1" points="26.0, 12.0, 28.0, 12.0" port1="output" port2="input" term1="0" term2="0" width="1" />
+        <LINK __key="links" inst1="CoSimOutputEl_vtms1" inst2="output_vtmy1" points="34.0, 12.0, 41.0, 12.0" port1="output" port2="output" term1="0" term2="0" width="1" />
+        <properties __key="properties" />
+      </TOPOLOGY>
+    </CONTENTS>
+  </ENCRYPTION>
+</MASTER2>
