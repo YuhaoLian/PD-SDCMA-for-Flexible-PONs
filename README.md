@@ -13,15 +13,16 @@ MATLAB Code with VPI Documentation the paper 《Power Domain Sparse Dimensional 
 If you use this code in your research, please cite the paper:
 
 ```
-@misc{lian2025powerdomainsparsedimensional,
-      title={Power Domain Sparse Dimensional Constellation Multiple Access (PD-SDCMA) for Enabled Flexible PONs}, 
-      author={Yuhao Lian and Xiao Han and Xinmao Deng},
-      year={2025},
-      eprint={2506.08053},
-      archivePrefix={arXiv},
-      primaryClass={cs.ET},
-      url={https://arxiv.org/abs/2506.08053}, 
+@INPROCEEDINGS{Lian2508:Power,
+AUTHOR="Yuhao Lian and Xiao Han and Xinmao Deng",
+TITLE="Power Domain Sparse Dimensional Constellation Multiple Access {(PD-SDCMA)}
+for Enabled Flexible {PONs}",
+BOOKTITLE="2025 IEEE/CIC International Conference on Communications in China (ICCC)
+(ICCC'25)",
+ADDRESS="Shanghai, China",
+PAGES=6,
 }
+
 ```
 
 ## 4. Contact Information
