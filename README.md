@@ -22,7 +22,6 @@ BOOKTITLE="2025 IEEE/CIC International Conference on Communications in China (IC
 ADDRESS="Shanghai, China",
 PAGES=6,
 }
-
 ```
 
 ## 4. Contact Information
